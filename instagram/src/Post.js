@@ -3,7 +3,7 @@ import './Post.css';
 import Avatar from '@mui/material/Avatar';
 
 
-function Post() {
+function Post({ username, caption, imageUrl }) {
   return (
     <div className="post">
       {/* header / avatar /username */}
@@ -13,14 +13,14 @@ function Post() {
       alt="rafcese"
       src="https://play-lh.googleusercontent.com/-u-oG-Ni_pco9h7zc3CQl-lFkKJjztO3RGZMjnbaDiznnbXoMQZYUjITHN0BVxYHBg"
       />
-      <h3>Username</h3>
+      <h3>{username}</h3>
       </div>
 
       {/* image */}
-      <img className="post__image" src="https://www.igeeksblog.com/wp-content/uploads/2022/01/By-the-sea-630x450.jpg" alt=""></img>
+      <img className="post__image" src={imageUrl} alt=""></img>
 
       {/* username / caption */}
-      <h4 className="post__test"><strong>Username</strong>caption</h4>
+      <h4 className="post__test"><strong>{username}</strong>{caption}</h4>
 
     </div>
   )
