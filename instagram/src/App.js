@@ -5,7 +5,6 @@ import Post from './Post';
 function App() {
   return (
     <div className="app">
-
       <div className="app__header">
         <img 
         className="app__headerImage"
@@ -15,6 +14,9 @@ function App() {
 
       </div>
       <h1>Hello</h1>
+      <Post/>
+      <Post/>
+      <Post/>
       <Post/>
    
     </div>
